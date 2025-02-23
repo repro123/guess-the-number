@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  /* font */
+  --font-inter: "Inter", sans-serif;
+  --font-comic-neue: "Comic Neue", cursive;
+  --font-coming-soon: "Coming Soon", cursive;
+
+  /* colors */
+  --color-body: #222;
+  --color-text: #e7e7e7;
+  --color-fail: #d70000;
+  --color-primary: #b742b6;
+  --color-pass: #00b800;
+}
+
+/* Style the dialog's scrollbar */
+.custom-dialog::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-dialog::-webkit-scrollbar-track {
+  background: var(--color-body);
+  border-radius: 8px;
+}
+
+.custom-dialog::-webkit-scrollbar-thumb {
+  background: #00b800;
+  border-radius: 8px;
+}
+
+.custom-dialog::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
