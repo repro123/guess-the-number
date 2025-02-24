@@ -117,11 +117,20 @@ if (
         score--;
         document.querySelector("#score").textContent = score;
         displayMessageColor("orange");
-        displayMessage(
-          guess > randomNumber
-            ? "Too high, choose again😛"
-            : "Too low, choose again😛"
-        );
+        // displayMessage(
+        //   guess > randomNumber
+        //     ? "Too high, choose again😛"
+        //     : "Too low, choose again😛"
+        // );
+        if (guess > randomNumber + 10) {
+          displayMessage("Too high, choose again😛");
+        } else if (guess > randomNumber && guess <= randomNumber + 10) {
+          displayMessage("You are close, go lower🙂");
+        } else if (guess < randomNumber - 10) {
+          displayMessage("Too low, choose again😛");
+        } else if (guess < randomNumber && guess >= randomNumber - 10) {
+          displayMessage("You are close, go higer🙂");
+        }
       } else {
         score--;
         displayMessage("You lost the game 🤣😂");
