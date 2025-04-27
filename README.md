@@ -1,7 +1,7 @@
 # Guess The Number 🎮
 A fun and interactive number guessing game with multiple difficulty levels, built with HTML, Tailwind CSS, and JavaScript.
 
-## Features ✨
+## Features...✨
 
 - 3 Difficulty Modes
 
